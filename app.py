@@ -1,6 +1,5 @@
 
 import streamlit as st
-import os
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 from PyPDF2 import PdfReader
