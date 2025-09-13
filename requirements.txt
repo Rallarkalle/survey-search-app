@@ -3,4 +3,5 @@ sentence-transformers
 scikit-learn
 PyPDF2
 python-docx
+docx2txt
 PyMuPDF
