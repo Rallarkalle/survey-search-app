@@ -19,8 +19,7 @@ if 'document_chunks' not in st.session_state:
 def extract_text(file):
     if file.type == "application/pdf":
         doc = fitz.open(stream=file.read(), filetype="pdf")
-        text = "
-".join([page.get_text() for page in doc])
+        text = "\n".join([page.get_text() for page in doc])
     elif file.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
         with tempfile.NamedTemporaryFile(delete=False, suffix=".docx") as tmp:
             tmp.write(file.read())
