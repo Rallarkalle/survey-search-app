@@ -28,7 +28,7 @@ def extract_text(file):
     elif file.type == "text/plain":
         text = file.read().decode("utf-8")
     else:
-        text = ""
+        text = "Unsupported file type."
     return text
 
 # Sidebar for uploading documents
